@@ -1,20 +1,14 @@
 <template>
   <div id="app">
-    <background></background>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Background from './components/Background'
-
 export default {
-  name: 'App',
-  components: {
-    Background
-  }
+  name: 'App'
 }
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
-
+<style>
 </style>

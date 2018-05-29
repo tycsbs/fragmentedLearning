@@ -17,8 +17,9 @@ export default {}
     position: relative
     height: 44px
     text-align: center
-    background: #666;
-    color: #f66;
+    background: rgba(100,100,100,.5)
+    color: #fff
+    font-weight 700
     font-size: 0
     .icon
       display: inline-block
@@ -43,5 +44,3 @@ export default {}
         font-size: 20px
         color: #f66
 </style>
-
-
