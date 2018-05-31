@@ -3,7 +3,6 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import './common/stylus/reset.styl'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 

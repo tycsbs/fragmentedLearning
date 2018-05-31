@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Background from '@/components/bsBackground/Background'
+import BsStyle from '@/components/bsStyle/bsStyle'
 import BsHome from '@/components/bsHome/bsHome'
+import BsLeftNav from '@/components/bsLeftNav/bsLeftNav'
 
 Vue.use(Router)
 
@@ -14,8 +15,12 @@ export default new Router({
     },
     {
       path: '/css',
-      name: 'Background',
-      component: Background
+      name: 'BsStyle',
+      component: BsStyle,
+      children: [{
+        path: '/css/background',
+        component: BsLeftNav
+      }]
     }
   ]
 })

@@ -1,6 +1,6 @@
 <template>
-  <div class="m-header">
-    home
+  <div class="bs-home-wrapper">
+
   </div>
 </template>
 

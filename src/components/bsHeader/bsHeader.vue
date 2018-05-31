@@ -2,8 +2,7 @@
     <div class="bs-header-wrapper">
        <i-menu mode="horizontal"
         :theme="theme"
-        @on-select="selectItem"
-        active-name="1">
+        @on-select="selectItem">
         <menu-item name="1">
             <icon type="ios-paper"></icon>
             <router-link tag="span" to="/css">
@@ -57,7 +56,7 @@
 export default {
   data () {
     return {
-      theme: 'dark'
+      theme: 'light'
     }
   },
   methods: {
