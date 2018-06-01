@@ -23,6 +23,7 @@ export default {
 </script>
 <style lang="stylus" rel="stylesheet/stylus" scoped>
 .bs-nav-wrapper
+  height 100%
   .demo-row
     display flex
     padding 10px 20px

@@ -1,11 +1,14 @@
 <template>
-  <div id="app">
+  <div id="app" class="bs-container">
     <div class="header-wrapper">
       <bs-header></bs-header>
     </div>
-    <keep-alive>
-      <router-view/>
-    </keep-alive>
+    <div class="content-wrapper">
+      <keep-alive>
+        <router-view/>
+      </keep-alive>
+    </div>
+
   </div>
 </template>
 
@@ -20,5 +23,10 @@ export default {
 </script>
 
 <style rel="stylesheet/stylus" lang="stylus" scoped>
-
+.bs-container
+  height 100%
+  .header-wrapper
+    height 60px
+  .content-wrapper
+    height calc(100% - 60px)
 </style>

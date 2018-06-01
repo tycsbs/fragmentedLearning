@@ -1,23 +1,7 @@
 <template>
   <div class="bs-style-wrapper">
     <div class="bs-left-nav">
-      <Row>
-        <i-col span="8">
-            <i-menu>
-                <submenu name="1">
-                    <template slot="title">
-                        <icon type="ios-paper"></icon>
-                         背景颜色
-                    </template>
-                    <menu-item name="1-1">
-                       <router-link tag="span" to="/css/background">
-                          linear-gradient
-                         </router-link>
-                    </menu-item>
-                </submenu>
-            </i-menu>
-        </i-col>
-      </Row>
+        <bs-left-nav :menuList="menuItem"></bs-left-nav>
     </div>
     <div class="bs-main-content">
       <router-view></router-view>
@@ -26,16 +10,38 @@
 </template>
 
 <script type="text/ecmascript-6">
+import BsLeftNav from '@/base/bsLeftNav/bsLeftNav'
 export default {
-
+  data () {
+    return {
+      menuItem: [
+        {
+          name: 'background',
+          label: '背景颜色',
+          url: '/css/background',
+          subMenu: 'linear-gradient'
+        },
+        {
+          name: 'borderRadius',
+          label: '圆角',
+          url: '/css/borderRadius',
+          subMenu: 'border-radius'
+        }
+      ]
+    }
+  },
+  components: {
+    BsLeftNav
+  }
 }
 </script>
+
 <style lang="stylus" rel="stylesheet/stylus" scoped>
-@import "../../common/stylus/variable.styl"
+@import '../../common/stylus/variable.styl'
 .bs-style-wrapper
   display flex
-  min-height 300px
-  background-color #f9f9f9
+  height 100%
+  background-color: #f9f9f9
   .bs-left-nav
     width $width-left-nav
   .bs-main-content
