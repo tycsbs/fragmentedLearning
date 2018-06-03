@@ -6,7 +6,7 @@
             <submenu :name="menu.name"
             v-show="menuList.length"
             v-for="(menu , index) in menuList"
-            :key="menu"
+            :key="index"
             >
                 <template slot="title">
                     <icon type="ios-paper"></icon>

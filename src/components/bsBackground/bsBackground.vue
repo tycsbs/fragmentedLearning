@@ -54,7 +54,8 @@
       <div class="bs-code">
         <pre>
     background: #096;
-    background-image:radial-gradient(#fff 20%,transparent 0),radial-gradient(#fff 20%,transparent 0);
+    background-image:radial-gradient(#fff 20%,transparent 0),
+                     radial-gradient(#fff 20%,transparent 0);
     background-size: 40px 40px;
     background-position: 0 0, 20px 20px;
         </pre>
@@ -111,7 +112,7 @@ export default {
       background-position 0 0, 20px 20px
     .bs-code
       flex 1
-      padding 20px
+      padding 20px 0 0 20px
       font-size 16px
       font-weight 500
       background rgba(0,0,0,.7)

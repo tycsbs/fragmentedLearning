@@ -47,4 +47,5 @@ export default {
   .bs-main-content
     flex 1
     background-color #efefef
+    overflow auto
 </style>
