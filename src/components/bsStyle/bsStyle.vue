@@ -18,14 +18,26 @@ export default {
         {
           name: 'background',
           label: '背景颜色',
-          url: '/css/background',
-          subMenu: 'linear-gradient'
+          children: [
+            {
+              url: '/css/background',
+              text: '颜色渐变'
+            },
+            {
+              url: '/css/clipCorner',
+              text: '切角效果'
+            }
+          ]
         },
         {
           name: 'borderRadius',
           label: '圆角',
-          url: '/css/borderRadius',
-          subMenu: 'border-radius'
+          children: [
+            {
+              url: '/css/borderRadius',
+              text: 'border-radius'
+            }
+          ]
         }
       ]
     }

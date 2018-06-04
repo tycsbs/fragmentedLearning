@@ -12,9 +12,10 @@
                     <icon type="ios-paper"></icon>
                       {{menu.label}}
                 </template>
-                <menu-item :name="`menu.name_${index}`">
-                    <router-link tag="span" :to="menu.url">
-                      {{menu.subMenu}}
+                <menu-item v-for="(child , count) in menu.children"
+                :key="child.text" :name="`menu.name_${count}`">
+                    <router-link tag="span" :to="child.url">
+                      {{child.text}}
                       </router-link>
                 </menu-item>
             </submenu>
