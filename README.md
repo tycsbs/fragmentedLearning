@@ -1,6 +1,6 @@
-# fragment
+# fragmented leanring
 
-> A Vue.js project
+> this is a project for learning front-end knowledage , and this project is based on Vue.js and  iview ( a ui-component product by vue).
 
 ## Build Setup
 
@@ -11,11 +11,4 @@ npm install
 # serve with hot reload at localhost:8080
 npm run dev
 
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
