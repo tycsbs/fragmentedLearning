@@ -24,7 +24,7 @@ export default {
               text: '颜色渐变'
             },
             {
-              url: '/css/clipCorner',
+              url: '/css/clipcorner',
               text: '切角效果'
             }
           ]

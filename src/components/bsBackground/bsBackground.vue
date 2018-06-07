@@ -79,7 +79,6 @@ export default {
     margin 10px
     .bs-box
       width 240px
-      height 200px
       margin-right 10px
       box-shadow 0 0 2px rgba(20, 20, 20, .5)
     .demo1
@@ -93,7 +92,6 @@ export default {
                       linear-gradient(#fff 1px,transparent 0)
       background-size 20px 20px
     .demo3
-      height 240px
       background #58a
       background-image linear-gradient(90deg, #fff 1px,transparent 0),
                       linear-gradient(#fff 1px,transparent 0),
