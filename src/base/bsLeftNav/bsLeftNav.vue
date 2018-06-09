@@ -14,7 +14,7 @@
                 </template>
                 <menu-item v-for="(child , count) in menu.children"
                 :key="child.text" :name="`menu.name_${count}`">
-                    <router-link tag="span" :to="child.url">
+                    <router-link active-class="bs-click-area" :to="child.url">
                       {{child.text}}
                       </router-link>
                 </menu-item>
@@ -38,24 +38,14 @@ export default {
 }
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus" scoped>
-.bs-nav-wrapper
-  height 100%
-  .demo-row
-    display flex
-    padding 10px 20px
-    .bs-demo
-      width 240px
-      height 240px
-      background #fff
-      background-image linear-gradient(90deg,rgba(0, 153, 200, 0.5) 50%,transparent 0),
-                      linear-gradient(rgba(0, 153, 200,.5) 50%,transparent 0)
-      background-size 20px 20px
-    .bs-code
-      flex 1
-      padding 20px
-      font-size 16px
-      font-weight 500
-      background rgba(0,0,0,.7)
-      color #fff
+<style lang="stylus" rel="stylesheet/stylus">
+.bs-click-area
+    position relative
+    &:after
+      position absolute
+      content ''
+      top -10px
+      left -10px
+      right -10px
+      bottom -10px
 </style>
