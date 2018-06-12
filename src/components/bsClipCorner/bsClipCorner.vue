@@ -45,6 +45,24 @@
       </div>
     </div>
 
+    <div class="demo-row">
+      <div class="bs-box corner4">
+
+      </div>
+      <div class="bs-code">
+        <pre>
+    background: #58a;
+    background:
+            radial-gradient(circle at top left,transparent 15px,#58a 0) top left,
+            radial-gradient(circle at top right,transparent 15px,#58a 0) top right,
+            radial-gradient(circle at bottom left,transparent 15px,#58a 0) bottom left,
+            radial-gradient(circle at bottom right,transparent 15px,#58a 0) bottom right;
+    background-size:50% 50%;
+    background-repeat: no-repeat;
+        </pre>
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -92,6 +110,12 @@ export default {
         background linear-gradient(135deg,transparent 15px,#58a 0) top left, linear-gradient(-135deg,transparent 15px,#58a 0) top right, linear-gradient(-45deg,transparent 15px,#58a 0) bottom right, linear-gradient(45deg,transparent 15px,#58a 0) bottom left
         background-size 50% 50%
         background-repeat no-repeat
+        box-shadow none
+      &.corner4
+        background #58a
+        background radial-gradient(circle at top left,transparent 15px,#58a 0) top left, radial-gradient(circle at top right,transparent 15px,#58a 0) top right, radial-gradient(circle at bottom left,transparent 15px,#58a 0) bottom left, radial-gradient(circle at bottom right,transparent 15px,#58a 0) bottom right
+        background-size 50% 50%
+        background-repeat  no-repeat
         box-shadow none
     .bs-code
       flex 1
