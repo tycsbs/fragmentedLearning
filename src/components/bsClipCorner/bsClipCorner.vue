@@ -27,6 +27,24 @@
       </div>
     </div>
 
+    <div class="demo-row">
+      <div class="bs-box corner3">
+
+      </div>
+      <div class="bs-code">
+        <pre>
+    background: #58a;
+    background:
+            linear-gradient(135deg,transparent 15px,#58a 0) top left,
+            linear-gradient(-135deg,transparent 15px,#58a 0) top right,
+            linear-gradient(-45deg,transparent 15px,#58a 0) bottom right,
+            linear-gradient(45deg,transparent 15px,#58a 0) bottom left;
+    background-size:50% 50%;
+    background-repeat: no-repeat;
+        </pre>
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -69,6 +87,12 @@ export default {
         background  linear-gradient(-45deg,transparent 15px,#58a 0) right,linear-gradient(45deg,transparent 15px,#f60 0) left
         background-size 50% 100%
         background-repeat  no-repeat
+      &.corner3
+        background #58a
+        background linear-gradient(135deg,transparent 15px,#58a 0) top left, linear-gradient(-135deg,transparent 15px,#58a 0) top right, linear-gradient(-45deg,transparent 15px,#58a 0) bottom right, linear-gradient(45deg,transparent 15px,#58a 0) bottom left
+        background-size 50% 50%
+        background-repeat no-repeat
+        box-shadow none
     .bs-code
       flex 1
       width 0
