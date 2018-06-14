@@ -20,6 +20,21 @@
         </pre>
       </div>
     </div>
+
+    <div class="demo-row">
+      <div class="bs-box corner2"></div>
+      <div class="bs-code">
+        <pre>
+
+    background: #58a;
+    background:linear-gradient(-135deg,transparent 50%,rgba(0,0,0,.3) 0),
+              linear-gradient(to left bottom,transparent 15px,#58a 0);
+    background-size: 22px 22px,auto;
+    background-repeat: no-repeat;
+    background-position:100% 0 ;
+        </pre>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -53,15 +68,21 @@ export default {
         color #FFF
         line-height 1.5
         filter drop-shadow(2px 2px 6px rgba(0,0,0,.75))
-      &:after
-        position absolute
-        content " "
-        width 20px
-        height 20px
-        transform rotate(45deg)
-        right -10px
-        top 85px
-        background inherit
+        &:after
+          position absolute
+          content " "
+          width 20px
+          height 20px
+          transform rotate(45deg)
+          right -10px
+          top 85px
+          background inherit
+      &.corner2
+        background: #58a;
+        background:linear-gradient(-135deg,transparent 50%,rgba(0,0,0,.3) 0),linear-gradient(to left bottom,transparent 15px,#58a 0);
+        background-size: 22px 22px,auto;
+        background-repeat: no-repeat;
+        background-position:100% 0 ;
     .bs-code
       flex 1
       width 0
