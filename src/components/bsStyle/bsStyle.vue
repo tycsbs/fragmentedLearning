@@ -26,6 +26,10 @@ export default {
             {
               url: '/css/clipcorner',
               text: '切角效果'
+            },
+            {
+              url: '/css/shadow',
+              text: '阴影效果'
             }
           ]
         },

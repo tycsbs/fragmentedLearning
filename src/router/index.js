@@ -4,6 +4,7 @@ import BsStyle from '@/components/bsStyle/bsStyle'
 import BsHome from '@/components/bsHome/bsHome'
 import BsBackground from '@/components/bsBackground/bsBackground'
 import BsClipCorner from '@/components/bsClipCorner/bsClipCorner'
+import bsShadow from '@/components/bsShadow/bsShadow'
 
 Vue.use(Router)
 
@@ -26,6 +27,10 @@ export default new Router({
         {
           path: '/css/clipcorner',
           component: BsClipCorner
+        },
+        {
+          path: '/css/shadow',
+          component: bsShadow
         }
       ]
     }
