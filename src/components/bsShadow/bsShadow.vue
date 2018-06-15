@@ -25,13 +25,34 @@
       <div class="bs-box corner2"></div>
       <div class="bs-code">
         <pre>
-
     background: #58a;
     background:linear-gradient(-135deg,transparent 50%,rgba(0,0,0,.3) 0),
               linear-gradient(to left bottom,transparent 15px,#58a 0);
     background-size: 22px 22px,auto;
     background-repeat: no-repeat;
     background-position:100% 0 ;
+        </pre>
+      </div>
+    </div>
+
+    <div class="demo-row">
+      <div class="bs-box corner3"></div>
+      <div class="bs-code">
+        <pre>
+    position: relative;
+    background: #58a;
+    background: linear-gradient(-143deg,transparent 20px,#58a 0);
+
+    ::before
+
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 27px;
+    top:0;right:0;
+    background: linear-gradient(to bottom left,transparent 50%,rgba(0,0,0,.3) 0);
+    border-bottom-left-radius: 6px;
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,.1);
         </pre>
       </div>
     </div>
@@ -78,11 +99,26 @@ export default {
           top 85px
           background inherit
       &.corner2
-        background: #58a;
-        background:linear-gradient(-135deg,transparent 50%,rgba(0,0,0,.3) 0),linear-gradient(to left bottom,transparent 15px,#58a 0);
-        background-size: 22px 22px,auto;
-        background-repeat: no-repeat;
-        background-position:100% 0 ;
+        background #58a
+        background linear-gradient(-135deg,transparent 50%,rgba(0,0,0,.3) 0),linear-gradient(to left bottom,transparent 15px,#58a 0)
+        background-size 22px 22px,auto
+        background-repeat no-repeat
+        background-position 100% 0
+      &.corner3
+        position relative
+        background #58a
+        background linear-gradient(-143deg,transparent 20px,#58a 0)
+        border none
+        &:before
+          content ""
+          position absolute
+          width 34px
+          height 27px
+          top 0
+          right 0
+          background linear-gradient(to bottom left,transparent 50%,rgba(0,0,0,.3) 0)
+          border-bottom-left-radius  6px
+          box-shadow -1px 1px 3px -1px rgba(0,0,0,.1)
     .bs-code
       flex 1
       width 0
