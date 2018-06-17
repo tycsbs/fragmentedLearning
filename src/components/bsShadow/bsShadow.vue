@@ -56,6 +56,30 @@
         </pre>
       </div>
     </div>
+
+    <div class="demo-row">
+      <div class="bs-box corner4"></div>
+      <div class="bs-code">
+        <pre>
+    position: relative;
+    background: #58a;
+    background: linear-gradient(-150deg,transparent 17.5px,#58a 0);
+
+    ::before
+
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 35px;
+    top:0;right:0;
+    background: linear-gradient(to bottom left,transparent 50%,rgba(0,0,0,.3) 0);
+    transform: translateX(-15px) rotate(-30deg);
+    transform-origin: top left;
+    border-bottom-left-radius: 6px;
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,.1);
+        </pre>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -119,6 +143,22 @@ export default {
           background linear-gradient(to bottom left,transparent 50%,rgba(0,0,0,.3) 0)
           border-bottom-left-radius  6px
           box-shadow -1px 1px 3px -1px rgba(0,0,0,.1)
+      &.corner4
+        position relative
+        background linear-gradient(-150deg, transparent 17.5px, #58a 0)
+        border none
+        &:before
+          content ''
+          position absolute
+          width 20px
+          height 35px
+          top 0
+          right 0
+          background linear-gradient(to bottom left,transparent 50%,rgba(0,0,0,.3) 0)
+          transform  translateX(-15px) rotate(-30deg)
+          transform-origin  top left
+          border-bottom-left-radius  6px
+          box-shadow  -1px 1px 3px -1px rgba(0,0,0,.1)
     .bs-code
       flex 1
       width 0
